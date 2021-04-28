@@ -20,6 +20,7 @@ yum -y install https://github.com/zmartzone/mod_auth_openidc/releases/download/v
 - then on tab Access and add the Scope `offline_access`
 - also add the response type `code token id_token`
 - click on save
+- note down the client id, secret and other configuration secret
 
 [VIDEO-DEMO](https://youtu.be/sVzloqCMNqg) 
 
