@@ -16,7 +16,7 @@ yum -y install https://github.com/zmartzone/mod_auth_openidc/releases/download/v
 - select the tab MitreID
 - select the client self-registration tab and click on new client
 - give a name to the client and indicate as redirect uri a "vanity" URL that must point to a path protected by this module but must NOT point to any content
-  - e.g. if you want to protect `https://mysite.com/example, a possible redirect uri will be `https://mysite.com/example/redirect_uri`
+  - e.g. if you want to protect `https://mysite.com/example`, a possible redirect uri will be `https://mysite.com/example/redirect_uri`
 - then on tab Access and add the Scope `offline_access`
 - also add the response type `code token id_token`
 - click on save
@@ -26,7 +26,7 @@ yum -y install https://github.com/zmartzone/mod_auth_openidc/releases/download/v
 
 ## Protect a page: authorizing only members of a IAM group
 
-To protect https://mysite.com/example/ a config file will looks like: 
+To protect `https://mysite.com/example/` a config file will looks like: 
 
 ```
 LogLevel debug
