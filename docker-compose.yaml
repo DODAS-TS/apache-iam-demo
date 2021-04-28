@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  httpd:
+    image: apache
+    network_mode: "host"
+
+    volumes:
+      - ./config/:/etc/httpd/conf.d/
+      - ./web/:/var/www/html
